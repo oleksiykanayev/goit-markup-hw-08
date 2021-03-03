@@ -1,0 +1,24 @@
+.site-nav {
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+
+    & .link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      color: var(--sec-textcolor);
+      transition: color 250ms var(--cubic-effect);
+
+      font-weight: 500;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+    }
+    & .snav-link:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}

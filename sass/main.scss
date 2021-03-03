@@ -1,0 +1,37 @@
+//BASE//
+@import "./base/variables";
+@import "./base/common";
+@import "./base/container";
+
+//COMPONENTS//
+@import "./components/header/logo-header";
+@import "./components/header/site-nav";
+@import "./components/header/contact-nav";
+@import "./components/solution/solution-title";
+@import "./components/solution/solution-button";
+@import "./components/advantages/visually-hidden";
+@import "./components/advantages/advantages-list";
+@import "./components/activities/activities-title";
+@import "./components/activities/activities-card";
+@import "./components/ourteam/ourteam-title";
+@import "./components/ourteam/ourteam-card";
+@import "./components/ourteam/social-list";
+@import "./components/regular-customers/regular-customers-title";
+@import "./components/regular-customers/regular-customers-list";
+@import "./components/baseline/logo-baseline";
+@import "./components/baseline/baseline-contacts";
+@import "./components/baseline/baseline-social-list";
+@import "./components/baseline/baseline-form";
+@import "./components/baseline/baseline-btn";
+@import "./components/modal-btn";
+
+//LAYOUT//
+@import "./layout/mobile-menu";
+@import "./layout/header";
+@import "./layout/solution";
+@import "./layout/advantages";
+@import "./layout/activities";
+@import "./layout/ourteam";
+@import "./layout/regular-customers";
+@import "./layout/baseline";
+@import "./layout/modal";

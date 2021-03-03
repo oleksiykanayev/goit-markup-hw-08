@@ -1,0 +1,59 @@
+.advantages-list {
+  font-weight: normal;
+  line-height: 1.71;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  & .title {
+    margin-bottom: 10px;
+    color: var(--sec-textcolor);
+
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+.card {
+  min-width: 270px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--back2-color);
+  }
+}
+.icon {
+  &-antena::before {
+    background-image: url(../image/antenna.svg);
+  }
+  &-clock::before {
+    background-image: url(../image/clock.svg);
+  }
+  &-diagram::before {
+    background-image: url(../image/diagram.svg);
+  }
+  &-astro::before {
+    background-image: url(../image/astronaut.svg);
+  }
+}

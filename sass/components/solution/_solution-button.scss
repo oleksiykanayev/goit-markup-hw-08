@@ -1,0 +1,15 @@
+.solution-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--main-lite-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}

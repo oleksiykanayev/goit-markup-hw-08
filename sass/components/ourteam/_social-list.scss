@@ -1,0 +1,30 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  &-item {
+    width: 44px;
+    height: 44px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-lite-color);
+    fill: var(--iconteam-color);
+    border-radius: 50%;
+    transition: fill, background-color 250ms var(--cubic-effect);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      fill: var(--main-lite-color);
+    }
+  }
+}

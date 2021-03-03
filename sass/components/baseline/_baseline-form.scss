@@ -1,0 +1,50 @@
+.baseform {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+.connect-form {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--main-lite-color);
+}
+.futer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  &-input {
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--back1-color);
+    color: var(--main-lite-color);
+    padding-left: 16px;
+    outline: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      min-width: 358px;
+    }
+  }
+}
+
+.futer-form-input {
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    min-width: 358px;
+  }
+}

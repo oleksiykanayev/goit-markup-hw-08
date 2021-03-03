@@ -1,0 +1,22 @@
+.basement {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--back3-color);
+}
+.base {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.connect {
+  margin-bottom: 20px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: var(--main-lite-color);
+}

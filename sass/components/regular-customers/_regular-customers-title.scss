@@ -1,0 +1,13 @@
+.regular-customers-title {
+  margin-bottom: 30px;
+  color: var(--sec-textcolor);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}

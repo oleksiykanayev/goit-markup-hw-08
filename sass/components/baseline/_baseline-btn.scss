@@ -1,0 +1,25 @@
+.futer-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--main-lite-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  align-self: center;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
+}
+.futer-icon {
+  margin-left: 10px;
+}

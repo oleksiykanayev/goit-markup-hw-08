@@ -1,0 +1,51 @@
+.ourteam {
+  &-profession {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      margin: -15px;
+    }
+
+    & .title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: var(--sec-textcolor);
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.188;
+    }
+  }
+}
+.team {
+  &-card {
+    background-color: var(--main-lite-color);
+    border: 1px solid var(--bord-port-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 4px 4px var(--teamshad-color);
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
+  }
+  &-textblock {
+    padding: 30px 0 24px 0;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }
+  }
+}

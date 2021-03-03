@@ -1,0 +1,14 @@
+.activities {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.activities-title {
+  margin-bottom: 50px;
+  color: var(--sec-textcolor);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+}
