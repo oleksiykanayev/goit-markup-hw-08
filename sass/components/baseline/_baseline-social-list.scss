@@ -1,6 +1,13 @@
 .basesocial {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // text-align: center;
   margin-bottom: 60px;
+
+   @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
 
   &-list {
     display: flex;

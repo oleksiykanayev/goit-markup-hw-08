@@ -593,7 +593,6 @@ body {
 }
 
 .basement-logo {
-  margin: 0 auto;
   width: 145px;
   height: 31px;
   margin-bottom: 20px;
@@ -604,9 +603,34 @@ body {
   line-height: 1.2;
 }
 
+@media screen and (max-width: 1200px) {
+  .basement-logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basement-logo {
+    width: 145px;
+    height: 31px;
+    margin-bottom: 20px;
+    color: var(--main-lite-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
 .basement-contacts {
-  text-align: center;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .basement-contacts {
+    text-align: center;
+  }
 }
 
 address {
@@ -647,8 +671,15 @@ address {
 }
 
 .basesocial {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .basesocial {
+    align-items: center;
+  }
 }
 
 .basesocial-list {
@@ -834,9 +865,6 @@ address {
   .mobile-menu-nav-item:not(:last-child) {
     margin-bottom: 30px;
   }
-  .mobile-menu-nav-contacts-item:not(:last-child) {
-    margin-bottom: 32px;
-  }
   .mobile-menu-social-links {
     display: flex;
     flex-wrap: wrap;
@@ -998,12 +1026,6 @@ address {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .activities {
-    margin-bottom: 94px;
-  }
-}
-
 .ourteam {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1037,7 +1059,7 @@ address {
   background-color: var(--back3-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .base {
     display: flex;
     flex-wrap: wrap;
@@ -1046,6 +1068,7 @@ address {
 }
 
 .connect {
+  display: flex;
   margin-bottom: 20px;
   margin-top: 12px;
   font-size: 14px;
@@ -1084,8 +1107,6 @@ address {
   display: flex;
   align-items: start;
   justify-content: flex-end;
-  min-width: 450px;
-  min-height: 581px;
   background-color: var(--main-lite-color);
   border-radius: 4px;
   padding: 40px;
@@ -1097,16 +1118,19 @@ address {
 }
 
 .modal-text {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 441px;
-  height: 23px;
+  display: block;
+  text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   color: var(--sec-textcolor);
-  line-height: 1.15;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-text {
+    line-height: 1.15;
+  }
 }
 
 .modal-form-input {
@@ -1183,9 +1207,11 @@ address {
 .modal-form-label-policy {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  line-height: 1.71;
+  line-height: 1.17;
   margin-bottom: 32px;
+  font-size: 12px;
 }
 
 .modal-form-label-policy::before {
@@ -1206,6 +1232,13 @@ address {
 .modal-form-check-policy:focus + .modal-form-label-policy::before {
   border: 2px solid var(--accent-color);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-label-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-link {

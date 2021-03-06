@@ -402,7 +402,6 @@ body {
 }
 
 .basement-logo {
-  margin: 0 auto;
   width: 145px;
   height: 31px;
   margin-bottom: 20px;
@@ -413,9 +412,34 @@ body {
   line-height: 1.2;
 }
 
+@media screen and (max-width: 1200px) {
+  .basement-logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basement-logo {
+    width: 145px;
+    height: 31px;
+    margin-bottom: 20px;
+    color: var(--main-lite-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
 .basement-contacts {
-  text-align: center;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .basement-contacts {
+    text-align: center;
+  }
 }
 
 address {
@@ -456,8 +480,15 @@ address {
 }
 
 .basesocial {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .basesocial {
+    align-items: center;
+  }
 }
 
 .basesocial-list {
@@ -619,9 +650,6 @@ address {
   .mobile-menu-nav-item:not(:last-child) {
     margin-bottom: 30px;
   }
-  .mobile-menu-nav-contacts-item:not(:last-child) {
-    margin-bottom: 32px;
-  }
   .mobile-menu-social-links {
     display: flex;
     flex-wrap: wrap;
@@ -728,7 +756,7 @@ address {
   background-color: var(--back3-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .base {
     display: flex;
     flex-wrap: wrap;
@@ -737,6 +765,7 @@ address {
 }
 
 .connect {
+  display: flex;
   margin-bottom: 20px;
   margin-top: 12px;
   font-size: 14px;

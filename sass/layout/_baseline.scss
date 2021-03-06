@@ -4,13 +4,15 @@
   background-color: var(--back3-color);
 }
 .base {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  
 }
 .connect {
+  display: flex;
   margin-bottom: 20px;
   margin-top: 12px;
   font-size: 14px;
