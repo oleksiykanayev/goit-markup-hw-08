@@ -261,6 +261,13 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 480px) {
+  .solution-title {
+    font-size: 20px;
+    line-height: 1.37;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .solution-title {
     font-size: 44px;
