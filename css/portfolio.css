@@ -650,6 +650,9 @@ address {
   .mobile-menu-nav-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .mobile-menu-nav-contacts-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
   .mobile-menu-social-links {
     display: flex;
     flex-wrap: wrap;
@@ -673,17 +676,24 @@ address {
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
-  .mobile-mail-link {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.166;
-    letter-spacing: 0.02em;
-    color: var(--main-textcolor);
+}
+
+@media screen and (max-width: 767px) and (max-width: 479px) {
+  .mobile-phone-link {
+    font-size: 26px;
   }
 }
 
+.mobile-mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: var(--main-textcolor);
+}
+
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
