@@ -1,5 +1,5 @@
 .solution {
-  max-width: 480px;
+  max-width: 100%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 768px) {
   .solution {
-    max-width: 768px;
+    max-width: 100%;
     height: 400px;
     background-image: linear-gradient(
         to right,
